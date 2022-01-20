@@ -1,0 +1,17 @@
+.header{
+    border: 1px;
+    width: 85%;
+    margin: auto;
+}
+
+.nav{
+    width: 30%;
+    position: absolute;
+    right: 100px;
+    top: 30px;
+}
+
+/* .logo{
+    position: absolute;
+    left: 10px;
+} */
