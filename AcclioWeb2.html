@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style2.css">
     <meta charset="UTF-8">
@@ -10,17 +15,18 @@
 </head>
 <body>
     <div class="body">
+<div id="home">
       <div class="header">
         <div class="nav">
             <div class="nav-logo"><img src="images/acclio-logo.png" alt="" width="150px" height="40px"></div>
                
             <div class="nav-list">
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">PROCESS</a></li>
-                    <li><a href="">CLIENTS</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li onclick = "pageScroller('homeValue')"><a href="#home">HOME</a></li> 
+                    <li onclick = "pageScroller('aboutValue')"><a href="#about">ABOUT</a></li>
+                    <li onclick = "pageScroller('processValue')"><a href="#process">PROCESS</a></li>
+                    <li onclick = "pageScroller('clientValue')"><a href="#client">CLIENTS</a></li>
+                    <li onclick = "pageScroller('contactValue')"><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +45,11 @@
             <br>
             <button class="button">Discover More</button>
         </div>
-       </div>    
+        
+       </div>
+</div>
+
+<div id="about">    
         <div class="digital">
         <h1 class="craft">What craft beautiful digital experiences</h1>
         <p class="settling">Never settling for the status quo or resting on the successes of
@@ -47,18 +57,17 @@
             go to the edge of <br> what is possible and exceed their own 
                                 expectations.</p>
         </div>
-        <div class="tech">
+        <div>
             <ul class="tecnologyImg">
                 <li><img src="images/chip1.png" alt="" width="150" height="150" class="chips"> </span></li>
             <li>
-                    <div class="tecnology">
-                             
-                        <h1 class="technologyHeader">Technology</h1>
-                        <p>Web Applications</p>
-                        <p>Mobile Applications</p>
-                        <p>Integrations & Middlewares</p>
-                        <p>Internet of Things</p>
-                    </div>    
+                <div class="tecnology">
+                <h1 class="technologyHeader">Technology</h1>
+                <p>Web Applications</p>
+                <p>Mobile Applications</p>
+                <p>Integrations & Middlewares</p>
+                <p>Internet of Things</p>
+                </div>    
             </li>
             <li><img src="images/artist1.png" alt="" width="150" height="150" class="designImg"></li>
             <li>
@@ -68,8 +77,7 @@
                     <p>Corporate Branding</p>
                     <p>UI & UX</p>
                     <p>Motion Graphics</p>
-                </div>
-                
+             </div>
             </li>
             <li><img src="images/planning1.png" alt="" width="150" height="150" class="strategyImg"></li>
             <li> 
@@ -108,6 +116,8 @@
                 TEAM MEMBERS
             </h3>
         </div>
+</div>
+<div id="process">
         <div class="aboutUs">
             <h1 class="we">This is how we do it</h1>
     <p class="weCraft">This is how we craft our beautiful experiences</p>
@@ -133,14 +143,17 @@
             </p>
 
         </div>
+</div>
+
         <div class="getStarted">
             <h1 class="ourfootPrint">Acclio partners with businesses <br> to deliver </h1>
 
-            <button >Get Started</button>
+            <button>Get Started</button>
         
 
 
         </div>
+<div id="clients">
         <div class="footPrint">
             <h1 class="ourfootPrint">Our Footprint</h1>
             <p>You are in good company</p>
@@ -150,43 +163,84 @@
                 <img src="images/shell2.jpg"></p>
 
         </div>
-        <div class="contactUs">
-            <h1>Say Hello to Us</h1>
-            <p>We are friendly and available to chat. Reach out to us anytimeand we <br> will happily answer your questions.</p>
-                <ul class="form">
-              <li><form>
-                  <p>Your name: <br><input type="text" name=""></p>      
-                  <p>Your email: <br><input type="text" name=""></p>
-                  <p>Phone number: <br><input type="text" name=""></p>
-                  <p>Subject: <br><input type="text" name=""></p>
-                  <p>Your message: <br><textarea rows="5" cols="20"></textarea></p>
-                  <input type="submit" name="" value="Send Message">
-              </li></form>
-              <li class="callUs">
-              <i class="fa fa-phone-volume"></i>
-              <p>Call us</p>
-              <p>+2348030988470</p>
-              <i class="fa fa-envelope"></i>
-              <p>Mail us</p>
-              <p>info@acclio.com</p>
-        
-              <p>We are Social too</p>
-              <p class="socialIcon">
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                  <a href=""><i class="fa fa-instagram-square"></i></a>
-                  <a href=""><i class="fa fa-basketball-ball"></i></a>
-                  <a href=""><i class="fa fa-stack-overflow"></i></a>
-              </p>
-              </li>
-                </ul>
-        </div>
-        <div class="newsLetter">
+</div>
+<div id="contact">
+        <div class= "container-fluid contactUs">
+            <div class="row">
+                <div class="col-md-6"> 
+                    <div class="fillHere">
+                        <div>
+                            <h1>Say Hello to Us</h1>
+                            <p>We are friendly and available to chat. Reach out to us anytime and we will happily answer your questions.</p>
+                        </div>
+                   <div class="row">
+                       <form action="">
+                       <div class="row">
+                          <div class="col-md-6"> 
+                         <label for="" class="form-label">Your name: </label> <br>
+                         <input type="text" class="form-control" value="" placeholder=""> 
+                          </div>
+                          <div class="col-md-6">
+                            <label for="" class="form-label">Your email: </label> <br>
+                            <input type="text" class="form-control" value="" placeholder=""> 
+                          </div>
+                       </div>
 
+                       <div class="row">
+                        <div class="col-md-6"> 
+                       <label for="" class="form-label">Phone number: </label> <br>
+                       <input type="text" class="form-control" value=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <label for="" class="form-label">Subject: </label> <br>
+                          <input type="text" class="form-control" value="" placeholder=""> 
+                        </div>
+                        <div class="col-12">
+                            <label for="" class="form-label">Address: </label> <br>
+                            <textarea class="form-control" rows="5" cols="60"></textarea>
+                          </div>
+                        </div>
+                        <button>Send Message</button>
+                       </form>
+                   </div>
+                </div>
+                </div>
+                <div class="col-md-6"> 
+                    <div class="callUs">
+                    <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/phone-call-light.png" alt="">
+                        <h1>Call Us</h1>
+                        <p>+2348030988470</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/mail.png" alt="">
+                        <h1>Mail Us</h1>
+                        <p>info@acclio.com</p>
+                    </div>
+                    </div>
+                    <div class="col-md-12 social">
+                        <img src="images/network-light.png" alt="" class="socialImage">
+                        <h1>We are Social too</h1>
+                        <p>
+                            <a href=""><img src="images/facebook.png" alt="" width="20" height="20"></a>
+                            <a href=""><img src="images/linkedin (1).png" alt="" width="20" height="20"></a>
+                            <a href=""><img src="images/instagram.png" alt="" width="20" height="20"></a>
+                            <a href=""><img src="images/dribbble.png" alt="" width="20" height="20"></a>
+                            <a href=""><img src="images/stack-overflow.png" alt="" width="20" height="20"></a>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+        <div class="newsLetter">
 
         </div>
         <div class="footer">
-
+        
+<div onclick="moveToTop" id="backToTop"><a href="#home"><img src="images/top-icon.png" alt="" class="toTop"></a></div>
         </div>
             
         
